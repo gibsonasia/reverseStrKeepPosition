@@ -24,7 +24,7 @@ function reverseStrWords(str){
       tempWord += " "; //adds space between words
     
   }
-    tempArr.push(tempWord + " "); //adds revered string to array 
+    tempArr.push(tempWord); //adds revered string to array 
     return tempArr.join(" "); //turns the array back into a string
 
   //function below had logical error 
