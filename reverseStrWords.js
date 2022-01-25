@@ -1,3 +1,7 @@
+/*Question: Write a function in Javascript that will reverse every word in a given string and return the new string. 
+Every word should be reversed but the string as a whole should not be reversed. And DO NOT use array.reverse() method */
+
+
 //working function updated with fixed logical error
     
 function reverseStrWords(str){
@@ -5,7 +9,6 @@ function reverseStrWords(str){
   let myArr = str.split(" "); // puts each work from string into an array
   let tempArr = []; //new array with words reversed 
   let tempWord =""; //will hold the string thats reversed
-   //place holder for the index of the current string index
 
   //LOOPS through array from end
   for(let i = 0; i < myArr.length; i++){
@@ -18,6 +21,7 @@ function reverseStrWords(str){
       tempWord += word.charAt(j); //builds reverse string 
           
     }
+      tempWord += " "; //adds space between words
     
   }
     tempArr.push(tempWord + " "); //adds revered string to array 
